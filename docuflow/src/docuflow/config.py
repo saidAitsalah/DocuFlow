@@ -3,7 +3,9 @@ from functools import lru_cache
 from langchain.chat_models import init_chat_model
 from langchain_ollama import OllamaEmbeddings
 from pydantic_settings import BaseSettings, SettingsConfigDict
+from dotenv import load_dotenv
 
+load_dotenv()
 
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env", extra="ignore")

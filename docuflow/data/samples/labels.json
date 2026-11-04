@@ -1,0 +1,1067 @@
+{
+  "generated_on": "2026-11-04",
+  "seed": 42,
+  "documents": [
+    {
+      "file": "invoice_01.pdf",
+      "doc_type": "invoice",
+      "defects": [],
+      "fields": {
+        "invoice_number": "FAC-2026-0489",
+        "issue_date": "2026-10-16",
+        "due_date": "2026-11-15",
+        "supplier_name": "Laurent et Fils",
+        "supplier_siret": "38908386600274",
+        "client_name": "Pons Pruvost SARL",
+        "iban": "FR2284959310341316475255341",
+        "line_items": [
+          {
+            "description": "Fourniture de matériel informatique",
+            "quantity": 9,
+            "unit_price_ht": 159.56,
+            "total_ht": 1436.04
+          },
+          {
+            "description": "Transport et livraison",
+            "quantity": 9,
+            "unit_price_ht": 125.15,
+            "total_ht": 1126.35
+          }
+        ],
+        "total_ht": 2562.39,
+        "vat_rate": 20.0,
+        "total_vat": 512.48,
+        "total_ttc": 3074.87
+      }
+    },
+    {
+      "file": "invoice_02.pdf",
+      "doc_type": "invoice",
+      "defects": [],
+      "fields": {
+        "invoice_number": "FAC-2026-8929",
+        "issue_date": "2026-11-06",
+        "due_date": "2026-12-06",
+        "supplier_name": "Joubert Chauveau S.A.",
+        "supplier_siret": "64139537100405",
+        "client_name": "Weiss",
+        "iban": "FR6022691669784801845146270",
+        "line_items": [
+          {
+            "description": "Fourniture de matériel informatique",
+            "quantity": 3,
+            "unit_price_ht": 1197.85,
+            "total_ht": 3593.55
+          },
+          {
+            "description": "Développement spécifique (jour)",
+            "quantity": 6,
+            "unit_price_ht": 682.1,
+            "total_ht": 4092.6
+          },
+          {
+            "description": "Formation sur site (jour)",
+            "quantity": 3,
+            "unit_price_ht": 982.21,
+            "total_ht": 2946.63
+          },
+          {
+            "description": "Audit de sécurité",
+            "quantity": 6,
+            "unit_price_ht": 2035.87,
+            "total_ht": 12215.22
+          },
+          {
+            "description": "Prestation de conseil (jour)",
+            "quantity": 2,
+            "unit_price_ht": 698.98,
+            "total_ht": 1397.96
+          }
+        ],
+        "total_ht": 24245.96,
+        "vat_rate": 20.0,
+        "total_vat": 4849.19,
+        "total_ttc": 29095.15
+      }
+    },
+    {
+      "file": "invoice_03.pdf",
+      "doc_type": "invoice",
+      "defects": [
+        "totals_mismatch"
+      ],
+      "fields": {
+        "invoice_number": "FAC-2026-5882",
+        "issue_date": "2026-10-18",
+        "due_date": "2026-11-17",
+        "supplier_name": "Charrier",
+        "supplier_siret": "88095701400207",
+        "client_name": "Le Gall",
+        "iban": "FR2383465787133150983930103",
+        "line_items": [
+          {
+            "description": "Transport et livraison",
+            "quantity": 8,
+            "unit_price_ht": 235.71,
+            "total_ht": 1885.68
+          },
+          {
+            "description": "Formation sur site (jour)",
+            "quantity": 2,
+            "unit_price_ht": 1196.15,
+            "total_ht": 2392.3
+          },
+          {
+            "description": "Prestation de conseil (jour)",
+            "quantity": 2,
+            "unit_price_ht": 811.78,
+            "total_ht": 1623.56
+          },
+          {
+            "description": "Hébergement cloud (mois)",
+            "quantity": 5,
+            "unit_price_ht": 594.0,
+            "total_ht": 2970.0
+          }
+        ],
+        "total_ht": 8871.54,
+        "vat_rate": 20.0,
+        "total_vat": 1774.31,
+        "total_ttc": 10585.27,
+        "expected_total_ttc": 10645.85
+      }
+    },
+    {
+      "file": "invoice_04.pdf",
+      "doc_type": "invoice",
+      "defects": [],
+      "fields": {
+        "invoice_number": "FAC-2026-3734",
+        "issue_date": "2026-10-16",
+        "due_date": "2026-11-15",
+        "supplier_name": "David SARL",
+        "supplier_siret": "63116566900609",
+        "client_name": "Chauveau",
+        "iban": "FR4081080132677360260647468",
+        "line_items": [
+          {
+            "description": "Licence logicielle annuelle",
+            "quantity": 5,
+            "unit_price_ht": 3177.17,
+            "total_ht": 15885.85
+          },
+          {
+            "description": "Fourniture de matériel informatique",
+            "quantity": 6,
+            "unit_price_ht": 516.38,
+            "total_ht": 3098.28
+          },
+          {
+            "description": "Transport et livraison",
+            "quantity": 6,
+            "unit_price_ht": 176.41,
+            "total_ht": 1058.46
+          },
+          {
+            "description": "Fournitures de bureau (lot)",
+            "quantity": 4,
+            "unit_price_ht": 214.96,
+            "total_ht": 859.84
+          }
+        ],
+        "total_ht": 20902.43,
+        "vat_rate": 20.0,
+        "total_vat": 4180.49,
+        "total_ttc": 25082.92
+      }
+    },
+    {
+      "file": "invoice_05.pdf",
+      "doc_type": "invoice",
+      "defects": [],
+      "fields": {
+        "invoice_number": "FAC-2026-1170",
+        "issue_date": "2026-11-06",
+        "due_date": "2026-12-06",
+        "supplier_name": "Meyer",
+        "supplier_siret": "81219136900071",
+        "client_name": "Colas S.A.",
+        "iban": "FR6710799118384251354278498",
+        "line_items": [
+          {
+            "description": "Fournitures de bureau (lot)",
+            "quantity": 8,
+            "unit_price_ht": 288.67,
+            "total_ht": 2309.36
+          },
+          {
+            "description": "Fourniture de matériel informatique",
+            "quantity": 5,
+            "unit_price_ht": 665.7,
+            "total_ht": 3328.5
+          },
+          {
+            "description": "Maintenance applicative (mois)",
+            "quantity": 6,
+            "unit_price_ht": 446.63,
+            "total_ht": 2679.78
+          }
+        ],
+        "total_ht": 8317.64,
+        "vat_rate": 20.0,
+        "total_vat": 1663.53,
+        "total_ttc": 9981.17
+      }
+    },
+    {
+      "file": "invoice_06.pdf",
+      "doc_type": "invoice",
+      "defects": [],
+      "fields": {
+        "invoice_number": "FAC-2026-0526",
+        "issue_date": "2026-10-22",
+        "due_date": "2026-11-21",
+        "supplier_name": "Martineau S.A.S.",
+        "supplier_siret": "35348740800778",
+        "client_name": "Couturier S.A.R.L.",
+        "iban": "FR5580598262045053315869232",
+        "line_items": [
+          {
+            "description": "Audit de sécurité",
+            "quantity": 10,
+            "unit_price_ht": 5263.93,
+            "total_ht": 52639.3
+          },
+          {
+            "description": "Formation sur site (jour)",
+            "quantity": 6,
+            "unit_price_ht": 978.69,
+            "total_ht": 5872.14
+          },
+          {
+            "description": "Licence logicielle annuelle",
+            "quantity": 8,
+            "unit_price_ht": 2874.25,
+            "total_ht": 22994.0
+          },
+          {
+            "description": "Développement spécifique (jour)",
+            "quantity": 8,
+            "unit_price_ht": 593.63,
+            "total_ht": 4749.04
+          }
+        ],
+        "total_ht": 86254.48,
+        "vat_rate": 20.0,
+        "total_vat": 17250.9,
+        "total_ttc": 103505.38
+      }
+    },
+    {
+      "file": "invoice_07.pdf",
+      "doc_type": "invoice",
+      "defects": [],
+      "fields": {
+        "invoice_number": "FAC-2026-2288",
+        "issue_date": "2026-10-23",
+        "due_date": "2026-11-22",
+        "supplier_name": "Pasquier Laurent S.A.",
+        "supplier_siret": "54330365500582",
+        "client_name": "Muller",
+        "iban": "FR7969340608835615951484656",
+        "line_items": [
+          {
+            "description": "Fournitures de bureau (lot)",
+            "quantity": 10,
+            "unit_price_ht": 320.77,
+            "total_ht": 3207.7
+          },
+          {
+            "description": "Transport et livraison",
+            "quantity": 10,
+            "unit_price_ht": 190.87,
+            "total_ht": 1908.7
+          },
+          {
+            "description": "Formation sur site (jour)",
+            "quantity": 6,
+            "unit_price_ht": 987.46,
+            "total_ht": 5924.76
+          }
+        ],
+        "total_ht": 11041.16,
+        "vat_rate": 20.0,
+        "total_vat": 2208.23,
+        "total_ttc": 13249.39
+      }
+    },
+    {
+      "file": "invoice_08.pdf",
+      "doc_type": "invoice",
+      "defects": [
+        "totals_mismatch"
+      ],
+      "fields": {
+        "invoice_number": "FAC-2026-8349",
+        "issue_date": "2026-10-19",
+        "due_date": "2026-11-18",
+        "supplier_name": "Lenoir",
+        "supplier_siret": "69957773000269",
+        "client_name": "Guyon",
+        "iban": "FR0717693676320163287083172",
+        "line_items": [
+          {
+            "description": "Licence logicielle annuelle",
+            "quantity": 3,
+            "unit_price_ht": 4367.68,
+            "total_ht": 13103.04
+          },
+          {
+            "description": "Prestation de conseil (jour)",
+            "quantity": 7,
+            "unit_price_ht": 840.86,
+            "total_ht": 5886.02
+          },
+          {
+            "description": "Transport et livraison",
+            "quantity": 2,
+            "unit_price_ht": 186.08,
+            "total_ht": 372.16
+          },
+          {
+            "description": "Développement spécifique (jour)",
+            "quantity": 7,
+            "unit_price_ht": 806.74,
+            "total_ht": 5647.18
+          },
+          {
+            "description": "Hébergement cloud (mois)",
+            "quantity": 9,
+            "unit_price_ht": 449.53,
+            "total_ht": 4045.77
+          }
+        ],
+        "total_ht": 29054.17,
+        "vat_rate": 20.0,
+        "total_vat": 5810.83,
+        "total_ttc": 34774.93,
+        "expected_total_ttc": 34865.0
+      }
+    },
+    {
+      "file": "invoice_09.pdf",
+      "doc_type": "invoice",
+      "defects": [
+        "due_date_next_week"
+      ],
+      "fields": {
+        "invoice_number": "FAC-2026-4372",
+        "issue_date": "2026-10-12",
+        "due_date": "2026-11-11",
+        "supplier_name": "Martineau",
+        "supplier_siret": "87347143700350",
+        "client_name": "Daniel",
+        "iban": "FR3269096705466889373467065",
+        "line_items": [
+          {
+            "description": "Licence logicielle annuelle",
+            "quantity": 8,
+            "unit_price_ht": 817.01,
+            "total_ht": 6536.08
+          },
+          {
+            "description": "Formation sur site (jour)",
+            "quantity": 5,
+            "unit_price_ht": 1356.12,
+            "total_ht": 6780.6
+          },
+          {
+            "description": "Audit de sécurité",
+            "quantity": 3,
+            "unit_price_ht": 4161.71,
+            "total_ht": 12485.13
+          },
+          {
+            "description": "Transport et livraison",
+            "quantity": 2,
+            "unit_price_ht": 345.25,
+            "total_ht": 690.5
+          }
+        ],
+        "total_ht": 26492.31,
+        "vat_rate": 20.0,
+        "total_vat": 5298.46,
+        "total_ttc": 31790.77
+      }
+    },
+    {
+      "file": "invoice_10.pdf",
+      "doc_type": "invoice",
+      "defects": [
+        "missing_invoice_number"
+      ],
+      "fields": {
+        "invoice_number": null,
+        "issue_date": "2026-11-04",
+        "due_date": "2026-12-04",
+        "supplier_name": "Ramos",
+        "supplier_siret": "27204653300548",
+        "client_name": "Millet",
+        "iban": "FR7632719374529912419049663",
+        "line_items": [
+          {
+            "description": "Fournitures de bureau (lot)",
+            "quantity": 3,
+            "unit_price_ht": 393.48,
+            "total_ht": 1180.44
+          },
+          {
+            "description": "Fourniture de matériel informatique",
+            "quantity": 9,
+            "unit_price_ht": 91.49,
+            "total_ht": 823.41
+          },
+          {
+            "description": "Maintenance applicative (mois)",
+            "quantity": 10,
+            "unit_price_ht": 1149.75,
+            "total_ht": 11497.5
+          },
+          {
+            "description": "Développement spécifique (jour)",
+            "quantity": 8,
+            "unit_price_ht": 512.76,
+            "total_ht": 4102.08
+          }
+        ],
+        "total_ht": 17603.43,
+        "vat_rate": 20.0,
+        "total_vat": 3520.69,
+        "total_ttc": 21124.12
+      }
+    },
+    {
+      "file": "invoice_11.pdf",
+      "doc_type": "invoice",
+      "defects": [
+        "missing_invoice_number"
+      ],
+      "fields": {
+        "invoice_number": null,
+        "issue_date": "2026-10-18",
+        "due_date": "2026-11-17",
+        "supplier_name": "Allain et Fils",
+        "supplier_siret": "51850671200844",
+        "client_name": "Étienne",
+        "iban": "FR5437996507527354549480831",
+        "line_items": [
+          {
+            "description": "Formation sur site (jour)",
+            "quantity": 10,
+            "unit_price_ht": 803.22,
+            "total_ht": 8032.2
+          },
+          {
+            "description": "Fourniture de matériel informatique",
+            "quantity": 2,
+            "unit_price_ht": 1363.99,
+            "total_ht": 2727.98
+          },
+          {
+            "description": "Prestation de conseil (jour)",
+            "quantity": 2,
+            "unit_price_ht": 948.46,
+            "total_ht": 1896.92
+          },
+          {
+            "description": "Licence logicielle annuelle",
+            "quantity": 9,
+            "unit_price_ht": 1459.34,
+            "total_ht": 13134.06
+          }
+        ],
+        "total_ht": 25791.16,
+        "vat_rate": 20.0,
+        "total_vat": 5158.23,
+        "total_ttc": 30949.39
+      }
+    },
+    {
+      "file": "invoice_12.pdf",
+      "doc_type": "invoice",
+      "defects": [],
+      "fields": {
+        "invoice_number": "FAC-2026-7788",
+        "issue_date": "2026-10-19",
+        "due_date": "2026-11-18",
+        "supplier_name": "Fouquet Cordier S.A.R.L.",
+        "supplier_siret": "95788568400846",
+        "client_name": "Benard",
+        "iban": "FR3434352408240084271094777",
+        "line_items": [
+          {
+            "description": "Formation sur site (jour)",
+            "quantity": 4,
+            "unit_price_ht": 1406.86,
+            "total_ht": 5627.44
+          },
+          {
+            "description": "Fournitures de bureau (lot)",
+            "quantity": 4,
+            "unit_price_ht": 244.28,
+            "total_ht": 977.12
+          },
+          {
+            "description": "Audit de sécurité",
+            "quantity": 7,
+            "unit_price_ht": 5021.57,
+            "total_ht": 35150.99
+          }
+        ],
+        "total_ht": 41755.55,
+        "vat_rate": 20.0,
+        "total_vat": 8351.11,
+        "total_ttc": 50106.66
+      }
+    },
+    {
+      "file": "quote_01.pdf",
+      "doc_type": "quote",
+      "defects": [
+        "totals_mismatch"
+      ],
+      "fields": {
+        "quote_number": "DEV-2026-4062",
+        "issue_date": "2026-11-01",
+        "valid_until": "2026-12-01",
+        "supplier_name": "Gonzalez",
+        "supplier_siret": "41318699000722",
+        "client_name": "Diallo Barbe S.A.R.L.",
+        "line_items": [
+          {
+            "description": "Licence logicielle annuelle",
+            "quantity": 10,
+            "unit_price_ht": 3704.14,
+            "total_ht": 37041.4
+          },
+          {
+            "description": "Hébergement cloud (mois)",
+            "quantity": 4,
+            "unit_price_ht": 891.28,
+            "total_ht": 3565.12
+          },
+          {
+            "description": "Prestation de conseil (jour)",
+            "quantity": 4,
+            "unit_price_ht": 454.71,
+            "total_ht": 1818.84
+          }
+        ],
+        "total_ht": 42425.36,
+        "vat_rate": 20.0,
+        "total_vat": 8485.07,
+        "total_ttc": 50856.85,
+        "expected_total_ttc": 50910.43
+      }
+    },
+    {
+      "file": "quote_02.pdf",
+      "doc_type": "quote",
+      "defects": [],
+      "fields": {
+        "quote_number": "DEV-2026-1105",
+        "issue_date": "2026-10-28",
+        "valid_until": "2026-11-27",
+        "supplier_name": "Lebreton",
+        "supplier_siret": "93618324300802",
+        "client_name": "Guérin Lopez S.A.",
+        "line_items": [
+          {
+            "description": "Hébergement cloud (mois)",
+            "quantity": 9,
+            "unit_price_ht": 431.95,
+            "total_ht": 3887.55
+          },
+          {
+            "description": "Licence logicielle annuelle",
+            "quantity": 5,
+            "unit_price_ht": 4307.37,
+            "total_ht": 21536.85
+          }
+        ],
+        "total_ht": 25424.4,
+        "vat_rate": 20.0,
+        "total_vat": 5084.88,
+        "total_ttc": 30509.28
+      }
+    },
+    {
+      "file": "quote_03.pdf",
+      "doc_type": "quote",
+      "defects": [],
+      "fields": {
+        "quote_number": "DEV-2026-3511",
+        "issue_date": "2026-10-20",
+        "valid_until": "2026-11-19",
+        "supplier_name": "Parent Bruneau S.A.S.",
+        "supplier_siret": "67175655900744",
+        "client_name": "Renard SARL",
+        "line_items": [
+          {
+            "description": "Transport et livraison",
+            "quantity": 8,
+            "unit_price_ht": 324.6,
+            "total_ht": 2596.8
+          },
+          {
+            "description": "Développement spécifique (jour)",
+            "quantity": 7,
+            "unit_price_ht": 624.78,
+            "total_ht": 4373.46
+          },
+          {
+            "description": "Fourniture de matériel informatique",
+            "quantity": 2,
+            "unit_price_ht": 344.09,
+            "total_ht": 688.18
+          }
+        ],
+        "total_ht": 7658.44,
+        "vat_rate": 20.0,
+        "total_vat": 1531.69,
+        "total_ttc": 9190.13
+      }
+    },
+    {
+      "file": "quote_04.pdf",
+      "doc_type": "quote",
+      "defects": [],
+      "fields": {
+        "quote_number": "DEV-2026-7063",
+        "issue_date": "2026-10-14",
+        "valid_until": "2026-11-13",
+        "supplier_name": "Loiseau",
+        "supplier_siret": "93248086600809",
+        "client_name": "Jean SA",
+        "line_items": [
+          {
+            "description": "Audit de sécurité",
+            "quantity": 1,
+            "unit_price_ht": 5030.36,
+            "total_ht": 5030.36
+          },
+          {
+            "description": "Transport et livraison",
+            "quantity": 2,
+            "unit_price_ht": 79.86,
+            "total_ht": 159.72
+          },
+          {
+            "description": "Développement spécifique (jour)",
+            "quantity": 7,
+            "unit_price_ht": 722.36,
+            "total_ht": 5056.52
+          },
+          {
+            "description": "Fournitures de bureau (lot)",
+            "quantity": 2,
+            "unit_price_ht": 202.95,
+            "total_ht": 405.9
+          }
+        ],
+        "total_ht": 10652.5,
+        "vat_rate": 20.0,
+        "total_vat": 2130.5,
+        "total_ttc": 12783.0
+      }
+    },
+    {
+      "file": "quote_05.pdf",
+      "doc_type": "quote",
+      "defects": [],
+      "fields": {
+        "quote_number": "DEV-2026-3117",
+        "issue_date": "2026-10-29",
+        "valid_until": "2026-11-28",
+        "supplier_name": "Muller Baron S.A.R.L.",
+        "supplier_siret": "75588675100683",
+        "client_name": "Rocher Dupuis S.A.S.",
+        "line_items": [
+          {
+            "description": "Maintenance applicative (mois)",
+            "quantity": 4,
+            "unit_price_ht": 497.61,
+            "total_ht": 1990.44
+          },
+          {
+            "description": "Audit de sécurité",
+            "quantity": 8,
+            "unit_price_ht": 5736.36,
+            "total_ht": 45890.88
+          },
+          {
+            "description": "Transport et livraison",
+            "quantity": 9,
+            "unit_price_ht": 92.08,
+            "total_ht": 828.72
+          },
+          {
+            "description": "Développement spécifique (jour)",
+            "quantity": 1,
+            "unit_price_ht": 509.67,
+            "total_ht": 509.67
+          },
+          {
+            "description": "Fourniture de matériel informatique",
+            "quantity": 2,
+            "unit_price_ht": 709.65,
+            "total_ht": 1419.3
+          }
+        ],
+        "total_ht": 50639.01,
+        "vat_rate": 20.0,
+        "total_vat": 10127.8,
+        "total_ttc": 60766.81
+      }
+    },
+    {
+      "file": "quote_06.pdf",
+      "doc_type": "quote",
+      "defects": [],
+      "fields": {
+        "quote_number": "DEV-2026-6659",
+        "issue_date": "2026-10-30",
+        "valid_until": "2026-11-29",
+        "supplier_name": "Garcia",
+        "supplier_siret": "78091343000408",
+        "client_name": "Gay SA",
+        "line_items": [
+          {
+            "description": "Développement spécifique (jour)",
+            "quantity": 7,
+            "unit_price_ht": 501.41,
+            "total_ht": 3509.87
+          },
+          {
+            "description": "Fourniture de matériel informatique",
+            "quantity": 7,
+            "unit_price_ht": 785.21,
+            "total_ht": 5496.47
+          },
+          {
+            "description": "Audit de sécurité",
+            "quantity": 8,
+            "unit_price_ht": 2995.52,
+            "total_ht": 23964.16
+          },
+          {
+            "description": "Prestation de conseil (jour)",
+            "quantity": 7,
+            "unit_price_ht": 906.51,
+            "total_ht": 6345.57
+          },
+          {
+            "description": "Licence logicielle annuelle",
+            "quantity": 9,
+            "unit_price_ht": 4270.11,
+            "total_ht": 38430.99
+          }
+        ],
+        "total_ht": 77747.06,
+        "vat_rate": 20.0,
+        "total_vat": 15549.41,
+        "total_ttc": 93296.47
+      }
+    },
+    {
+      "file": "contract_01.pdf",
+      "doc_type": "contract",
+      "defects": [],
+      "fields": {
+        "contract_number": "CTR-2026-766",
+        "title": "Contrat de fourniture et de livraison",
+        "signed_date": "2026-07-06",
+        "start_date": "2026-07-08",
+        "end_date": "2029-07-07",
+        "party_a_name": "Legendre",
+        "party_b_name": "Pineau",
+        "annual_amount_ht": 81300.0,
+        "payment_terms_days": 30,
+        "notice_months": 3,
+        "jurisdiction_city": "Diallo"
+      }
+    },
+    {
+      "file": "contract_02.pdf",
+      "doc_type": "contract",
+      "defects": [],
+      "fields": {
+        "contract_number": "CTR-2026-162",
+        "title": "Contrat de fourniture et de livraison",
+        "signed_date": "2026-09-26",
+        "start_date": "2026-09-28",
+        "end_date": "2029-09-27",
+        "party_a_name": "Seguin Benard S.A.",
+        "party_b_name": "Laporte",
+        "annual_amount_ht": 54800.0,
+        "payment_terms_days": 60,
+        "notice_months": 3,
+        "jurisdiction_city": "Sainte Alexandrie-la-Forêt"
+      }
+    },
+    {
+      "file": "contract_03.pdf",
+      "doc_type": "contract",
+      "defects": [],
+      "fields": {
+        "contract_number": "CTR-2026-692",
+        "title": "Contrat de prestation de services informatiques",
+        "signed_date": "2026-02-07",
+        "start_date": "2026-02-10",
+        "end_date": "2027-02-09",
+        "party_a_name": "Diaz",
+        "party_b_name": "Teixeira",
+        "annual_amount_ht": 13000.0,
+        "payment_terms_days": 30,
+        "notice_months": 3,
+        "jurisdiction_city": "GuyotVille"
+      }
+    },
+    {
+      "file": "contract_04.pdf",
+      "doc_type": "contract",
+      "defects": [],
+      "fields": {
+        "contract_number": "CTR-2026-041",
+        "title": "Contrat de maintenance applicative",
+        "signed_date": "2026-04-02",
+        "start_date": "2026-04-06",
+        "end_date": "2029-04-05",
+        "party_a_name": "Carpentier",
+        "party_b_name": "Marchand Moreno S.A.",
+        "annual_amount_ht": 31200.0,
+        "payment_terms_days": 60,
+        "notice_months": 3,
+        "jurisdiction_city": "Gomez"
+      }
+    },
+    {
+      "file": "purchase_order_01.pdf",
+      "doc_type": "purchase_order",
+      "defects": [],
+      "fields": {
+        "po_number": "BC-2026-5148",
+        "order_date": "2026-10-27",
+        "delivery_date": "2026-11-16",
+        "buyer_name": "Durand",
+        "supplier_name": "Albert",
+        "supplier_siret": "92124998300419",
+        "delivery_address": "884, boulevard de Perret, 13912 Saint Auroredan",
+        "line_items": [
+          {
+            "description": "Formation sur site (jour)",
+            "quantity": 5,
+            "unit_price_ht": 1299.29,
+            "total_ht": 6496.45
+          },
+          {
+            "description": "Audit de sécurité",
+            "quantity": 6,
+            "unit_price_ht": 5441.93,
+            "total_ht": 32651.58
+          },
+          {
+            "description": "Maintenance applicative (mois)",
+            "quantity": 2,
+            "unit_price_ht": 324.41,
+            "total_ht": 648.82
+          }
+        ],
+        "total_ht": 39796.85,
+        "vat_rate": 20.0,
+        "total_vat": 7959.37,
+        "total_ttc": 47756.22
+      }
+    },
+    {
+      "file": "purchase_order_02.pdf",
+      "doc_type": "purchase_order",
+      "defects": [],
+      "fields": {
+        "po_number": "BC-2026-1639",
+        "order_date": "2026-10-21",
+        "delivery_date": "2026-12-03",
+        "buyer_name": "Pasquier Maillot S.A.R.L.",
+        "supplier_name": "Leconte",
+        "supplier_siret": "73158514700846",
+        "delivery_address": "999, boulevard Descamps, 88373 Saint Richard",
+        "line_items": [
+          {
+            "description": "Fournitures de bureau (lot)",
+            "quantity": 9,
+            "unit_price_ht": 213.8,
+            "total_ht": 1924.2
+          },
+          {
+            "description": "Fourniture de matériel informatique",
+            "quantity": 3,
+            "unit_price_ht": 1004.9,
+            "total_ht": 3014.7
+          }
+        ],
+        "total_ht": 4938.9,
+        "vat_rate": 20.0,
+        "total_vat": 987.78,
+        "total_ttc": 5926.68
+      }
+    },
+    {
+      "file": "purchase_order_03.pdf",
+      "doc_type": "purchase_order",
+      "defects": [],
+      "fields": {
+        "po_number": "BC-2026-6055",
+        "order_date": "2026-11-02",
+        "delivery_date": "2026-11-24",
+        "buyer_name": "Maillot",
+        "supplier_name": "Mace",
+        "supplier_siret": "67976438100845",
+        "delivery_address": "51, boulevard de Coulon, 67783 Lambert",
+        "line_items": [
+          {
+            "description": "Maintenance applicative (mois)",
+            "quantity": 9,
+            "unit_price_ht": 320.5,
+            "total_ht": 2884.5
+          },
+          {
+            "description": "Développement spécifique (jour)",
+            "quantity": 9,
+            "unit_price_ht": 696.2,
+            "total_ht": 6265.8
+          },
+          {
+            "description": "Formation sur site (jour)",
+            "quantity": 2,
+            "unit_price_ht": 876.01,
+            "total_ht": 1752.02
+          },
+          {
+            "description": "Fournitures de bureau (lot)",
+            "quantity": 5,
+            "unit_price_ht": 115.64,
+            "total_ht": 578.2
+          }
+        ],
+        "total_ht": 11480.52,
+        "vat_rate": 20.0,
+        "total_vat": 2296.1,
+        "total_ttc": 13776.62
+      }
+    },
+    {
+      "file": "purchase_order_04.pdf",
+      "doc_type": "purchase_order",
+      "defects": [],
+      "fields": {
+        "po_number": "BC-2026-2547",
+        "order_date": "2026-11-01",
+        "delivery_date": "2026-12-13",
+        "buyer_name": "Delaunay Joseph SA",
+        "supplier_name": "Moreau",
+        "supplier_siret": "05297516600514",
+        "delivery_address": "79, rue de Delaunay, 39863 Louis",
+        "line_items": [
+          {
+            "description": "Formation sur site (jour)",
+            "quantity": 5,
+            "unit_price_ht": 1362.44,
+            "total_ht": 6812.2
+          },
+          {
+            "description": "Fourniture de matériel informatique",
+            "quantity": 8,
+            "unit_price_ht": 748.29,
+            "total_ht": 5986.32
+          },
+          {
+            "description": "Hébergement cloud (mois)",
+            "quantity": 1,
+            "unit_price_ht": 240.97,
+            "total_ht": 240.97
+          },
+          {
+            "description": "Licence logicielle annuelle",
+            "quantity": 7,
+            "unit_price_ht": 2250.6,
+            "total_ht": 15754.2
+          }
+        ],
+        "total_ht": 28793.69,
+        "vat_rate": 20.0,
+        "total_vat": 5758.74,
+        "total_ttc": 34552.43
+      }
+    },
+    {
+      "file": "certificate_01.pdf",
+      "doc_type": "certificate",
+      "defects": [],
+      "fields": {
+        "supplier_name": "Merle",
+        "supplier_siret": "23124329600937",
+        "certificate_type": "ISO 14001",
+        "certificate_number": "14001-269430",
+        "issuer": "Bureau Veritas Certification",
+        "issue_date": "2024-09-28",
+        "expiry_date": "2027-09-28"
+      }
+    },
+    {
+      "file": "certificate_02.pdf",
+      "doc_type": "certificate",
+      "defects": [
+        "expired_certificate"
+      ],
+      "fields": {
+        "supplier_name": "Samson Thierry et Fils",
+        "supplier_siret": "27177449900401",
+        "certificate_type": "Attestation de vigilance",
+        "certificate_number": "vigilance-839945",
+        "issuer": "URSSAF",
+        "issue_date": "2025-07-18",
+        "expiry_date": "2026-01-16"
+      }
+    },
+    {
+      "file": "certificate_03.pdf",
+      "doc_type": "certificate",
+      "defects": [],
+      "fields": {
+        "supplier_name": "Benard S.A.S.",
+        "supplier_siret": "93597820500570",
+        "certificate_type": "Attestation de vigilance",
+        "certificate_number": "vigilance-110139",
+        "issuer": "URSSAF",
+        "issue_date": "2028-01-30",
+        "expiry_date": "2028-07-30"
+      }
+    },
+    {
+      "file": "certificate_04.pdf",
+      "doc_type": "certificate",
+      "defects": [
+        "expired_certificate"
+      ],
+      "fields": {
+        "supplier_name": "Henry",
+        "supplier_siret": "54665905300468",
+        "certificate_type": "ISO 9001",
+        "certificate_number": "9001-824586",
+        "issuer": "AFNOR Certification",
+        "issue_date": "2023-09-18",
+        "expiry_date": "2026-09-17"
+      }
+    }
+  ]
+}
