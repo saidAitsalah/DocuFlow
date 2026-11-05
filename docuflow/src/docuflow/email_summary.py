@@ -10,6 +10,7 @@ from langchain_core.runnables import RunnableParallel
 """ Mechanism of retry in case of llm failure """
 primary = get_llm()
 backup = init_chat_model("openai/gpt-oss-20b", model_provider="groq", temperature=0)
+
 robust_llm = primary.with_retry(stop_after_attempt=2).with_fallbacks([backup])
 
 
