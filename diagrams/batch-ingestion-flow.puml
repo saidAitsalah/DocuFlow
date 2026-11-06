@@ -1,0 +1,75 @@
+@startuml
+title DocuFlow batch ingestion: run() and handle_message()
+
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam defaultFontName "Segoe UI"
+skinparam defaultFontSize 13
+skinparam wrapWidth 220
+skinparam ArrowColor #555555
+skinparam ArrowFontSize 12
+skinparam ActivityBackgroundColor #EAF2FB
+skinparam ActivityBorderColor #3B6FB6
+skinparam ActivityDiamondBackgroundColor #FFF6D6
+skinparam ActivityDiamondBorderColor #C9A227
+skinparam NoteBackgroundColor #F5F5F5
+skinparam NoteBorderColor #999999
+
+start
+
+partition "run()" {
+  :List messages under the To-process Gmail label;
+  :Read the register sheet and build ""seen"",
+  the set of content_sha256 already filed;
+  note right
+    Gmail access is read-only, so the
+    register is the only record of
+    what was already filed.
+  end note
+}
+
+partition "handle_message()  (a failure here is logged, the batch continues)" {
+  repeat :Next message;
+    :Fetch PDF attachments;
+    if (Any PDF attached?) then (yes)
+      repeat :Next PDF;
+        :Compute SHA-256 digest;
+        if (Digest in ""seen""?) then (yes)
+          :Count duplicates_skipped; <<#E0E0E0>>
+        else (no)
+          :Build Origin lazily
+          (sender, thread id, received date);
+          :ingest_pdf(): process, file in Drive,
+          log in register
+          (see document-processing-flow);
+          if (Exception raised?) then (yes)
+            :log_failure(): append a needs_review
+            row carrying the error text;
+            if (Row logged?) then (yes)
+              :Count needs_review;
+              :Add digest to ""seen"";
+            else (no)
+              :Count unlogged_errors; <<#FFCDD2>>
+              note right
+                No register row, so the
+                next run retries this PDF.
+              end note
+            endif
+          else (no)
+            :Count filed or needs_review;
+            :Add digest to ""seen"";
+          endif
+        endif
+      repeat while (More PDFs in message?) is (yes) not (no)
+    else (no)
+      :Log warning, skip message; <<#FFE0B2>>
+    endif
+  repeat while (More messages?) is (yes) not (no)
+}
+
+:Log summary counters
+(messages, filed, needs_review,
+duplicates_skipped, unlogged_errors);
+
+stop
+@enduml

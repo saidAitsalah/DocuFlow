@@ -1,0 +1,77 @@
+@startuml
+title DocuFlow single document: process() and filing in ingest_pdf()
+
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam defaultFontName "Segoe UI"
+skinparam defaultFontSize 13
+skinparam wrapWidth 190
+skinparam ArrowColor #555555
+skinparam ArrowFontSize 12
+skinparam ActivityBackgroundColor #EAF2FB
+skinparam ActivityBorderColor #3B6FB6
+skinparam ActivityDiamondBackgroundColor #FFF6D6
+skinparam ActivityDiamondBorderColor #C9A227
+skinparam NoteBackgroundColor #F5F5F5
+skinparam NoteBorderColor #999999
+
+start
+
+:Write bytes to a temp dir
+under a sanitised file name;
+
+partition "process()  (no network beyond the LLM)" {
+  :load_pdf();
+  if (Text extractable?) then (yes)
+    :classify(): doc_type and confidence;
+    if (Confidence >= 0.7?) then (yes)
+      :extract(doc, doc_type);
+      note right
+        Retries once on invalid output.
+        The schema stays strict.
+      end note
+      if (Valid output?) then (yes)
+        :run_checks(): invoice and
+        certificate rules;
+        if (Any flags?) then (yes)
+          :status = flagged; <<#FFF9C4>>
+        else (no)
+          :status = ok; <<#C8E6C9>>
+        endif
+      else (no)
+        :needs_review: failed validation twice; <<#FFCDD2>>
+      endif
+    else (no)
+      :needs_review: low confidence; <<#FFCDD2>>
+    endif
+  else (no)
+    :needs_review: no text, needs OCR; <<#FFCDD2>>
+  endif
+}
+
+partition "ingest_pdf()  (filing)" {
+  if (status = needs_review?) then (yes)
+    :Folder: Needs-review / year
+    Keep the original file name;
+  else (no)
+    :Folder: DocType / year
+    Name: date_TYPE_counterparty_number.pdf;
+  endif
+  :Ensure the Drive folder path exists;
+  :Upload PDF, get webViewLink;
+  :Append a row to the register sheet
+  (cells starting with = + - @ are defused);
+}
+
+:Return status;
+
+stop
+
+legend right
+  |= Colour |= Meaning |
+  | <#C8E6C9> | Filed cleanly |
+  | <#FFF9C4> | Filed with business-rule flags |
+  | <#FFCDD2> | Needs human review |
+  | <#E0E0E0> | Skipped duplicate |
+endlegend
+@enduml
